@@ -1,11 +1,21 @@
 /* the animation code */
 @keyframes animatedLogo {
-    0% {transform: rotate(45deg);
-        transform: translateX(200px);}
-    25% {transform: rotate(90deg);}
-    50% {transform: rotate(180deg);}    
-    75% {transform: rotate(360deg);}
-    100% {transform: scale(60%);}
+    /* the animation will gradualy rotate for the next 90 degrees */
+    0% {transform: rotate(90deg);
+
+        }
+    25% {transform: rotate(180deg);
+        }
+        /* as the image rotates, it will change its position along the x-axis */
+    50% {transform: rotate(270deg);
+        transform: translate(100px);
+        }    
+    75% {transform: rotate(360deg);
+        }
+        /* The animation changes its size and colour to a grey scale */
+    100% {transform: scale(50%);
+        filter: grayscale(100%);
+        } 
 
 }
 
@@ -20,9 +30,10 @@
 }
 
 .image:hover {
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-name: animatedLogo;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in;
     animation-direction: alternate;
-    cursor: pointer;}
+    cursor: pointer;
+}
