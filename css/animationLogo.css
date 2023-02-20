@@ -1,0 +1,28 @@
+/* the animation code */
+@keyframes image{
+    0% {transform: rotate(90deg);
+        transform: translateX(100px);}
+    25% {transform: rotate(0deg);}
+    50% {transform: rotate(-90deg);}    
+    75% {transform: rotate(0deg);}
+    100% {transition: ease-in-out;}
+
+}
+
+
+
+
+/* Elements that I applied to the animation */
+.image {
+    width: 10%;
+    height: 10%;
+    animation-duration: 5s;
+    animation-name: animatedLogo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    cursor: pointer;
+    
+}
+
+image:hover {image}
