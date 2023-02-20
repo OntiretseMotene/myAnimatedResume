@@ -1,11 +1,11 @@
 /* the animation code */
-@keyframes image{
-    0% {transform: rotate(90deg);
-        transform: translateX(100px);}
-    25% {transform: rotate(0deg);}
-    50% {transform: rotate(-90deg);}    
-    75% {transform: rotate(0deg);}
-    100% {transition: ease-in-out;}
+@keyframes animatedLogo {
+    0% {transform: rotate(45deg);
+        transform: translateX(200px);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}    
+    75% {transform: rotate(360deg);}
+    100% {transform: scale(60%);}
 
 }
 
@@ -16,13 +16,13 @@
 .image {
     width: 10%;
     height: 10%;
-    animation-duration: 5s;
-    animation-name: animatedLogo;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    cursor: pointer;
     
 }
 
-image:hover {image}
+.image:hover {
+    animation-duration: 10s;
+    animation-name: animatedLogo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    cursor: pointer;}
